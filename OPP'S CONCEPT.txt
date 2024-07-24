@@ -1,0 +1,127 @@
+OPP'S CONCEPT
+
+disadvantage of POP(procedure oriented programming language):
+replica cannot be used
+
+Object Oriented programming language : 
+ADVANTAGES:
+* 
+replica is used
+EXAMPLE: for creation of single or multiple laptop we can use same features and conditions wheareas it is not possible in POP
+
+1.class-->collection of object , blueprint of object , properties of class can be used by anyone with  some conditions
+  KEYWORD : class class_Name:
+
+class Solution:
+  def add(a,b):  #def inside class is called method and outside class it is called function
+     return a+b
+obj1=Solution
+print(obj1.add(2,3)) #5
+
+2.object-->instance of class , things in a class
+
+*** CONSTRUCTOR and DESTRUCTOR
+when we want give adddress for a variable then use constructor 
+ 
+class Myclass:
+  def _init_(self,a,b):
+     a=self.a
+     b=self.b
+
+MEANING OF CLASS VARIABLE AND INSTANCE VARIABLE:
+class variable is declared in a class
+instance variable is declared in method
+
+class Solution:
+  cls_var="in class variable"
+  def add(a,b):
+     cls_var_add="in method"
+     print(cls_var_add)
+     return a+b
+obj1=Solution
+print(obj1.add(2,3)) #5
+
+***ABSTRACTION : ONLY SHOWS THE RELEVANT DATA AND HIDE IRRELAVENT DATA
+HIDDEN DATA IS ACCESSED BY USING ACCESS SPECIFIERS(PUBLIC , PRIVATE, PROTECTED)
+public access to all
+private no access
+protected bit accesss
+
+3.exception handling--->handles the errors
+4.**Polymorphism---->poly means MANY morphism means forms. Single method can take many forms (eg.kamal hassan)
+
+#In python we can't acheive polymorphism directly
+But we use method overloading,method overiding
+
+***METHOD OVERRIDING[run time (static)]  METHOD OVERLODING[compile(dynami)]
+class Animal():
+    def Speak():
+        return "Speaking..."
+class Dog(Animal):
+    def Speak():
+        return "Dog is speaking"
+class Puppy():
+    def Speak():
+        return "puppy is speaking"
+obj3=Puppy
+print(obj3.Speak())
+
+
+
+5.Inheritance--->deriving a child class from parent/existing class
+types of inheritance:
+A.SINGLE INHERITANCE
+
+class Animal:
+    def Speak():
+        return "Animal is speaking"
+#single inheritance
+class Dog(Animal):
+    def Bark():
+        return "bow.."    
+obj2=Dog
+print(obj2.Speak())
+print(obj2.Bark())
+
+B.MULTIPLE INHERITANCE
+
+class Animal:
+    def Speak():
+        return "Animal is speaking"
+class Dog(Animal):
+    def Bark():
+        return "bow.."
+class Puppy(Dog,Animal):
+    def puppy_speak():
+        return "i am puppy"    
+obj3=Puppy
+print(obj3.Speak())
+print(obj3.Bark())
+print(obj3.puppy_speak())
+
+C.MULTILEVEL INHERITANCE
+
+class Animal:
+    def Speak():
+        return "Animal is speaking"
+#single inheritance
+class Dog(Animal):
+    def Bark():
+        return "bow.."
+class Puppy(Dog):
+    def puppy_speak():
+        return "i am puppy"   
+obj3=Puppy
+print(obj3.Speak())
+print(obj3.Bark())
+print(obj3.puppy_speak())
+
+
+D.HYBRID INHERITANCE
+E.HEIRARCHICAL INHERITANCE
+
+ADVANTAGE:reusability
+
+
+6.Encapsulation---> all program are bundled and stored in a single file
+

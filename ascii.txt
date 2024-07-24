@@ -1,0 +1,110 @@
+***ASCII VALUES***
+0-9[48-57]
+A-Z[67-90]
+
+a-z[97-122]
+
+sring:sequence of character
+strings are inmuttable
+title:combination of upper &lower case[swap,
+1.isslower
+2isalphanum
+3.isalpha
+4isnumeric 
+5.isupper
+6.islower
+7.isdigit
+lower: converting tp lower case
+upper: converting to upper case
+swap case
+
+Q1:a=str(input())
+print(a.lower())#samll all
+print(a.upper())#caps all
+print(a.title())#first letter caps
+print(a.swapcase())#capstosmall
+print(a.strip())#leading&trailing
+print(a.replace('a','z'))#replace a with z
+print(a.split('l'))#l is filled with gaps
+##string methods 
+print(a.isalpha())
+print(a.isnumeric())
+print(a.isalnum())
+print(a.isascii())
+print(a.islower())
+print(a.isupper())
+print(a.istitle())
+print(a.isdigit())
+#ord[order of ascii value]
+print(ord('a'))
+print(ord('A')+3)
+print(ord(" "))
+print(chr(60))
+2Q:check how many vowels in array
+'''a=input()
+c=0
+for i in a:
+     if(i=="a" or i=="i" or i=="o" or i=="u" or i=="e"):
+          c+=1
+print(c)'''
+3Q:write a program to print all the consonente
+x=(input())
+y='aeiou'
+c=0
+for i in x:
+     if(i not in y):
+          c+=1
+print(c)
+#(or)
+4Q:print the unicharacter in string
+=str(input())
+c=[]
+for i in a:
+    if(i in not c):
+        c.append(i)
+print(*c)
+5Q:asci values 
+for i in range(32,128):
+    print(chr(i),end=" ")
+
+6Q:adding ascii values
+#a=(input())
+sum=0
+for i in a:
+    if(ord(i)>=48 and ord(i)<=57):
+        sum+=int(i)
+print(sum)
+
+7Q:#write a code to print all the capital letters in given string
+a=(input())
+sum=0
+for i in a:
+    if(ord(i)>=65 and ord(i)<=90):
+        print(i)
+8Q:remove all the brackets from the given algebric expression
+a=(input())
+sum=0
+for i in a:
+    if(ord(i)==123 or ord(i)==125 or ord(i)==123 or ord(i)==40 or ord(i)==41 or ord(i)==91 or ord(i)==93 ):
+        pass
+    else:
+        print(i,end="")
+9Q:hello------wor-----ld
+------hello world
+#a=str(input())
+c=0
+f=""
+for i in a:
+    if(i=='-'):
+        c +=1
+    else:
+        f+=i
+print("-"*c+" "+f )
+
+
+
+
+
+
+
+

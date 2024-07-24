@@ -1,0 +1,75 @@
+class Solution:
+    def add(a,b):
+        return a+b
+    def sub(a,b):
+        return a-b
+    def mul(a,b):
+        return a*b
+    def div(a,b):
+        return a//b
+obj1=Solution
+print(obj1.add(20,10))#30
+print(obj1.sub(20,10))#10
+print(obj1.mul(20,10))#200
+print(obj1.div(20,10))#2
+
+*** SINGLE INHERITANCE
+class Animal:
+    def Speak():
+        return "Animal is speaking"
+#single inheritance
+class Dog(Animal):
+    def Bark():
+        return "bow.."    
+obj2=Dog
+print(obj2.Speak())
+print(obj2.Bark())
+
+*** MULTILEVEL INHERITANCE
+
+class Animal:
+    def Speak():
+        return "Animal is speaking"
+#single inheritance
+class Dog(Animal):
+    def Bark():
+        return "bow.."
+class Puppy(Dog):
+    def puppy_speak():
+        return "i am puppy"   
+obj3=Puppy
+print(obj3.Speak())
+print(obj3.Bark())
+print(obj3.puppy_speak())
+
+*** MULTIPLE INHERITANCE
+
+class Animal:
+    def Speak():
+        return "Animal is speaking"
+class Dog(Animal):
+    def Bark():
+        return "bow.."
+class Puppy(Dog,Animal):
+    def puppy_speak():
+        return "i am puppy"    
+obj3=Puppy
+print(obj3.Speak())
+print(obj3.Bark())
+print(obj3.puppy_speak())
+
+
+
+***METHOD OVERRIDING
+
+class Animal():
+    def Speak():
+        return "Speaking..."
+class Dog(Animal):
+    def Speak():
+        return "Dog is speaking"
+class Puppy():
+    def Speak():
+        return "puppy is speaking"
+obj3=Puppy
+print(obj3.Speak())
