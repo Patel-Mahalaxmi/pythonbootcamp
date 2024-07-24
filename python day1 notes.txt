@@ -1,0 +1,122 @@
+PYTHON : 
+DATATYPES:
+1. int
+2. float
+3. string
+4. Boolean
+5. list
+6. sets
+7. tuple
+8. dictionary
+
+PRINTING STATEMENT:
+1. print("hello")
+2.var="python"
+  print("good" ,var)
+3. input() method
+   name=input("enter your name")#akhila
+   print("hello" ,name)#hello Akhila
+4. FORMATTED STRING(fstring):
+   age=50,name=Akhila
+   OUTPUT: HELLO AKHILA Y0UR AGE IS 20
+   age=input("enter your age")
+   name=input("enter your name")
+   print(f" hello {name} your {age}")
+5.
+
+*** END IS USED TO GET DESIRED OUTPUT FORMAT or #end is called as additional parameter
+
+
+### CONDITIONAL STATEMENTS
+
+1.if
+2.elif
+3.else
+1Q.name=input("enter your name\n")
+age=int(input("enter your age\n"))
+if(age<18):
+    print(f"hello {name} your{age} not eligeble for vote")
+else:
+     print(f"hello {name} your {age}  eligeble for vote")
+
+
+### OPERATORS
+
+1.Arthemetic{+ , - , * , % , / , // ,}
+  
+  ** import math
+     print(math.pow(a,b))#2,3--->8
+
+2.Logical{and  or not }
+3.Relational {==,!=,>,<,>=,<=}
+4.Assignment{=,+=,-=,/=,%=}
+5.Bitwise {&,|,^,~,<<,>>}
+6.merbership {in , not in}
+7.identity {is , is not}
+
+
+1Q:X GOES to market he will buy 10 apples 2 dozen bananas 8 oranges cost of apples 15 one banana is 4 1 oranges 5 mother is y she gives 700 if he brings the  money back then print HE IS not cheated if he doesn't bring money back cheated
+
+ca=15
+cb=4
+co=5
+apple=int(input())
+banana=int(input())
+orange=int(input())
+amount_given=int(input())
+sum1=(apple*ca)+(banana*cb)+(orange*co)
+if(sum1<=amount_given):
+   print("not cheated")
+else:
+   print("cheated")
+
+***  even or odd or negative or positive 
+
+a=int(input())
+if(a%2==0 and a>=0):
+   print("the number is even and positive")
+elif(a%2!=0 and a<0):
+   print("the number is odd and negative")
+elif(a%2!=0 and a>=0):
+   print("the number is odd and positive")
+else:
+   print("even negative number")
+
+
+2Q: mister Z is selected for Olympics  participating in swimming one is selected as winner. z got selected x and y are friends  z. x is participating in badminton  and y in table tennis. 
+height=140cm
+weight is factors of 2
+body fat is < 12% this for badminton
+according to the selection committee  req for table tennis are
+height mini=118-148
+weight is the factors of no. of  medals won by z
+body fat=14% acc to previous history z participated in 14 games out of it he is having success rate of 65% write a program to check whether x , y, z from India  in a same plane or not
+
+x_h=int(input())
+x_w=int(input())
+x_f=float(input())
+y_h=int(input())
+y_w=int(input())
+y_f=float(input())
+x=0
+y=0
+if(x_h==140 and x_w%2==0 and x_f<0.12):
+   x +=1
+   #print("x is selected for badminton")
+   if((118==y_w or y_w<=148) and y_w%9==0 and y_w%3==0 and y_f==0.14 ):
+        y +=1
+        #print("y is selected table tennis")
+        print("travel in same plane")
+else:
+   print("they wont")
+3Q:n=int(input())
+if(n>0 and n%2==0):
+    print("given number is +ve and even")
+elif(n>0 and n%2!=0):
+    print("given number is +ve and not even")
+elif(n<0 and n%2==0):
+    print("given number is -ve and even")
+elif(n<=0 and n%!=0):
+    print("given number is -ve and not even")
+else:
+     print("all")

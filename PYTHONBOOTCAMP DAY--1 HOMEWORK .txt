@@ -1,0 +1,73 @@
+*** PYTHONBOOTCAMP DAY-->1 HOMEWORK ***
+
+1. PALINDROME
+
+n=int(input())
+s=n
+r=0
+d=0
+while n>0:
+  d=n%10
+  r=r*10+d
+  n=n//10
+if(r==s):
+  print("palindrome")
+else;
+  print("not palindrome")
+
+2 . AMSTRONG NUMBER
+
+
+import math
+n=int(input())
+s=n
+a=str(n)
+r=0
+d=0
+while n>0:
+   d=n%10
+   r=r+int(math.pow(d,len(a)))
+   n=n//10
+if(r==s):
+   print("Amstrong")
+else:
+   print("not amstrong")
+
+3.FRIENDLY NUMNERS
+
+n1=int(input())
+n2=int(input())
+div=1
+sum1=0
+sum2=0
+while div<=n//2:
+    if n1%div==0:
+       sum1 +=div
+div=1
+while div<=b//2:
+    if b%div==0:
+        sum2 +=div
+    div +=1
+if(sum1==b and sum2==a):
+    print("friendly number")
+else:
+    print("not friendly")
+
+5 . STRONG NUMBER
+
+sum1=0
+n=int(input())
+temp=num
+while(n):
+   i=1
+   f=1
+   r=n%10
+   while(i<=r):
+      f=f+i
+      i=i+1
+   sum1=sum1+f
+   num=num//10
+if(sum1==temp):
+   print("strong number")
+else:
+   print("not strong")

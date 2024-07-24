@@ -1,0 +1,14 @@
+*** PYTHONBOOTCAMP DAY-->2 HOMEWORK ***
+
+1. WRITE A PROGRAM TO FIND AREA AND PERIMETER OF CIRCLE 
+
+P=3.14
+r=int(input())
+print(f"area :"{p*r*r})
+print(f"perimeter"{2*p*r})
+
+2.WRITE A PROGRAM TO FIND AREA AND PERIMETER TRIANGLE
+
+b,h=map(int,input().split())
+print(f,"perimeter:" {a+b+c})
+print(f"area: "{0.5*b*h})
